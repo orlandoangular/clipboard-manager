@@ -15,7 +15,9 @@ if (app.makeSingleInstance(() => {})) {
 }
 
 function init() {
-  globalShortcut.register('CommandOrControl+Shift+V', show);
+/*   globalShortcut.register('CommandOrControl+Shift+V', show); 
+  in contrastr with google docs
+*/
   globalShortcut.register('CommandOrControl+;', show);
   createWindow();
   whatchForClipboard();
